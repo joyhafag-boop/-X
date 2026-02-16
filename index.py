@@ -11,7 +11,7 @@ How to ACTIVATE (Render):
 4) Render -> Environment variables:
    BOT_TOKEN      = BotFather token (SECRET)
    ADMIN_CHAT_ID  = your Telegram numeric id (851336690o)
-   PUBLIC_URL     = https://x-3wyp.onrender.com   (NO trailing slash)
+   PUBLIC_URL     = https://t.me/SecureSurfZone  (NO trailing slash)
 
 5) Deploy. After deploy, open:
    https://your-app-name.onrender.com/
@@ -49,7 +49,7 @@ DB_PATH = "shop.db"
 
 # ENV (Render)
 TOKEN = os.environ["8315570920"]
-PUBLIC_URL = os.environ["https://x-3wyp.onrender.com"].rstrip("/")
+PUBLIC_URL = os.environ["https://t.me/SecureSurfZone"].rstrip("/")
 ADMIN_CHAT_ID = int(os.environ["8273597769"])
 
 # Checkout states
@@ -235,7 +235,7 @@ async def admin_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not is_admin(update):
         await update.message.reply_text("❌ Admin only.")
         return
-    await update.message.reply_text("🧰 Admin Panel:", reply_markup=kb_admin_panel())
+    await update.message.reply_text(" Admin Panel:", reply_markup=kb_admin_panel())
 
 
 async def activate_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -249,7 +249,7 @@ async def activate_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "ENV vars:\n"
         "BOT_TOKEN\nADMIN_CHAT_ID\nPUBLIC_URL\n\n"
         "Webhook URL হবে:\n"
-        f"{PUBLIC_URL}/webhook\n\n"
+        f"{thttps://t.me/SecureSurfZone}/webhook\n\n"
         "24/7 (Free): UptimeRobot দিয়ে আপনার Render URL ping করুন প্রতি 5 মিনিটে।"
     )
     await update.message.reply_text(msg)
@@ -284,7 +284,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = q.from_user.id
 
     if data == "back":
-        await q.edit_message_text(f"🏠 {SHOP_NAME} Menu", reply_markup=kb_main())
+        await q.edit_message_text(f"🏠 {Shop_Name} Menu", reply_markup=kb_main())
         return
 
     if data == "help":
@@ -314,7 +314,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # ---------- Admin Panel Buttons ----------
     if data.startswith("admin:"):
-        if uid != ADMIN_CHAT_ID:
+        if uid != ADMIN_CHAT_ID:8273597769
             await q.edit_message_text("❌ Admin only.")
             return
 
@@ -385,7 +385,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 "⚙️ Activation Guide (Render)\n\n"
                 "Start Command:\nuvicorn index:api --host 0.0.0.0 --port $PORT\n\n"
                 "ENV:\nBOT_TOKEN\nADMIN_CHAT_ID\nPUBLIC_URL\n\n"
-                f"Webhook: {PUBLIC_URL}/webhook\n\n"
+                f"Webhook: {http://t.me/SccureSurfZoonex_bot}/webhook\n\n"
                 "24/7 (Free): UptimeRobot ping 5 min interval."
             )
             return
@@ -448,7 +448,7 @@ async def checkout_phone(update: Update, context: ContextTypes.DEFAULT_TYPE):
         ]
     )
     await update.message.reply_text(
-        f"💳 Payment method সিলেক্ট করুন:\n\nbKash: {BKASH_NUMBER}\nNagad: {NAGAD_NUMBER}",
+        f"💳 Payment method সিলেক্ট করুন:\n\nbKash: {01642012385}\nNagad: {01788098356}",
         reply_markup=kb,
     )
     return PAYMENT
@@ -555,9 +555,9 @@ async def checkout_trx(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # ===================== LIVE CHAT FORWARD =====================
 async def forward_live_chat(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = update.effective_user.id
-    if uid == ADMIN_CHAT_ID:
+    if uid == ADMIN_CHAT_ID:8273597769
         return
-    if not is_live_chat(uid):
+    if not is_live_chat(uid):8273597769
         return
 
     user = update.effective_user
@@ -566,7 +566,7 @@ async def forward_live_chat(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     admin_text = (
         "💬 LIVE CHAT MESSAGE\n"
-        f"From: {user.full_name} {username}\n"
+        f"From: {user.full_name} {@Crazy_Rcv_Admin}\n"
         f"User ID: {uid}\n"
         f"Message: {text}\n\n"
         f"Reply with:\n/reply {uid} <your_message>\n"
@@ -798,4 +798,4 @@ checkout_conv = ConversationHandler(
     fallbacks=[],
     allow_reentry=True,
 )
-tg_app.add_handler(https://x-3wyp.onrender.com)
+tg_app.add_handler(8273597769)
