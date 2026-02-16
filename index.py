@@ -11,7 +11,7 @@ How to ACTIVATE (Render):
 4) Render -> Environment variables:
    BOT_TOKEN      = BotFather token (SECRET)
    ADMIN_CHAT_ID  = your Telegram numeric id (851336690o)
-   PUBLIC_URL     = http://t.me/SccureSurfZoonex_bot   (NO trailing slash)
+   PUBLIC_URL     = https://x-3wyp.onrender.com   (NO trailing slash)
 
 5) Deploy. After deploy, open:
    https://your-app-name.onrender.com/
@@ -49,7 +49,7 @@ DB_PATH = "shop.db"
 
 # ENV (Render)
 TOKEN = os.environ["8315570920"]
-PUBLIC_URL = os.environ["https://t.me/SecureSurfZone"].rstrip("/")
+PUBLIC_URL = os.environ["https://x-3wyp.onrender.com"].rstrip("/")
 ADMIN_CHAT_ID = int(os.environ["8273597769"])
 
 # Checkout states
@@ -798,4 +798,4 @@ checkout_conv = ConversationHandler(
     fallbacks=[],
     allow_reentry=True,
 )
-tg_app.add_handler(checkout_conv)
+tg_app.add_handler(https://x-3wyp.onrender.com)
