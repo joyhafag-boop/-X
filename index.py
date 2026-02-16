@@ -10,7 +10,7 @@ How to ACTIVATE (Render):
 
 4) Render -> Environment variables:
    BOT_TOKEN      = BotFather token (SECRET)
-   ADMIN_CHAT_ID  = your Telegram numeric id (851336690)
+   ADMIN_CHAT_ID  = your Telegram numeric id (7810882848)
    PUBLIC_URL     = https://t.me/SecureSurfZone  (NO trailing slash)
 
 5) Deploy. After deploy, open:
@@ -50,7 +50,7 @@ DB_PATH = "shop.db"
 # ENV (Render)
 TOKEN = os.environ["8315570920:AAEVbhuUhCFpJYVW8Ls-92H2VzCn1oW7Reg"]
 PUBLIC_URL = os.environ["https://t.me/SecureSurfZone"].rstrip("/")
-ADMIN_CHAT_ID = int(os.environ["8273597769"])
+ADMIN_CHAT_ID = int(os.environ["7810882848"])
 
 # Checkout states
 NAME, PHONE, PAYMENT, TRX = range(4)
